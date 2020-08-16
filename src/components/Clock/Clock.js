@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+
 const Clock = props => {
     const [time, setTime] = useState(new Date())
 
@@ -16,8 +17,8 @@ const Clock = props => {
     })
 
     return (
-        <div className="clock">
-            <h2 data-cy='clockGreeting'>Time is {time.toLocaleTimeString()}</h2>
+        <div className="clock-ctnr">
+            <h2 className="clock" data-cy='clockGreeting'>Time is {time.toLocaleTimeString()}</h2>
         </div>
     )
 }

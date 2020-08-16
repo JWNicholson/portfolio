@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const StartStop=()=>{
+function StartStop(){
     const [color, setColor] = useState('green')
     const [toggle, setToggle] = useState(false);
 
@@ -18,7 +18,7 @@ const StartStop=()=>{
     
     return(
         <div className="power-btn-ctnr">
-            <button className="power-btn data-cy=pwrbtn"
+            <button className="power-btn" data-cy="pwrbtn"
              style={{background:color}}
                 onClick={toggleBtn}>   
                 {toggle?'Stop': 'Start'}

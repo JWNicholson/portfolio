@@ -1,0 +1,12 @@
+.clock-ctnr{
+    display: flex;
+    color:$apple-green;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(10, 3, 77, 0.8);
+    border:2px solid silver;
+    border-radius:$br-4;
+    padding:10px;
+
+    text-shadow: 0px 0px 4px rgba(127, 184, 0, 0.8);
+}

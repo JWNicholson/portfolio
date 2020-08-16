@@ -2,18 +2,19 @@ import React from 'react';
 import './App.scss';
 
 import Clock from './components/Clock/Clock';
-import StartStop from './components/Buttons/StartStop'
-
+import StartStop from './components/Buttons/StartStop';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       <h1>Giggedy</h1>
+       <Header/> 
+     
+       
        <button className="btn">Well, Alright</button>
        <Clock />
        <StartStop />
-      </header>
+     
     </div>
   );
 }
