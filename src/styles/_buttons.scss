@@ -1,8 +1,14 @@
 button{
     font-weight: bold;
     color: $white-smoke;
-    background-color: $red-orange;
-    border:2px solid $burnt-orange;
+    background-color: $burnt-orange;
+    border:2px solid $dark-background;
     margin: 1.5rem;
     border-radius: $br-4;
+}
+
+.power-btn{
+   width: 150px;
+    border:1px solid $white-smoke;
+    padding:8px;
 }
