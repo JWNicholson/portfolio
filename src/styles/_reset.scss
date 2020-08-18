@@ -38,9 +38,10 @@ body {
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
+ul,
+ol {
   list-style: none;
+  padding-left: 0;
 }
 
 /* A elements that don't have a class get default styles */

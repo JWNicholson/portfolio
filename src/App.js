@@ -4,6 +4,7 @@ import './App.scss';
 import Clock from './components/Clock/Clock';
 import StartStop from './components/Buttons/StartStop';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
        <button className="btn">Well, Alright</button>
        <Clock />
        <StartStop />
-     
+     <Footer />
     </div>
   );
 }

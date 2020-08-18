@@ -44,11 +44,11 @@ export default function Header () {
 			<CSSTransition in={!isSmallScreen || isVisible} timeout={350} classNames="NavAnimation" unmountOnExit>
 				<nav className="Nav">
 					<a href="/">Home</a>
-					<a href="/">Articles</a>
+					<a href="/">Project</a>
 					<a href="/">About</a>
 				</nav>
 			</CSSTransition>
-			<button onClick={toggleNav} className="Burger">
+			<button onClick={toggleNav} className="Hamburger">
 				<svg viewBox="0 0 100 80" width="40" height="40">
 					<rect width="100" height="20" />
 					<rect y="30" width="100" height="20" />
