@@ -5,11 +5,11 @@
   box-sizing: border-box;
 }
 
-/* Remove default padding */
-ul[class],
-ol[class] {
-  padding: 0;
-}
+// /* Remove default padding */
+// ul[class],
+// ol[class] {
+//   padding: 0;
+// }
 
 /* Remove default margin */
 body,
@@ -42,6 +42,7 @@ ul,
 ol {
   list-style: none;
   padding-left: 0;
+  margin-left: 0;
 }
 
 /* A elements that don't have a class get default styles */

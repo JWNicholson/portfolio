@@ -2,6 +2,12 @@ import React from 'react';
 
 import Clock from '../Clock/Clock';
 
+import { 
+    FaLinkedin, 
+    FaGithubSquare, 
+    FaBehanceSquare 
+    } from 'react-icons/fa'
+
 
 export default function Footer () {
     let newDate = new Date().getFullYear();
@@ -19,11 +25,7 @@ export default function Footer () {
                     <h2 className="main-footer-title">
                         About Me
                     </h2>
-                    {/* <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">Projects</a></li>
-                        <li><a href="/">Blog</a></li>
-                    </ul> */}
+                  
 
                      <div className="footer-about-links">
                      <a href="/">Home</a>
@@ -35,27 +37,29 @@ export default function Footer () {
                     <h2 className="main-footer-title">
                         Contact Me
                     </h2>
-                    <ul>
-                        <li>Email</li>
-                        <li className="footer-clock"><Clock /></li>
-                    </ul>
+                    <p>Email</p>
+                    
+                </div>
+
+                <div className="main-footer-irem">
+                <p className="footer-clock"><Clock /></p>
                 </div>
             </section>
 
             <section className="social-footer">
                 <ul className="social-list">
                     <li>
-                        <a href="/">Linked In</a>
-                        <a href="/">Git Hub</a>
-                        <a href="/">Behance</a>
+                        <a href="/"><FaLinkedin /></a>
+                        <a href="/"><FaGithubSquare /></a>
+                        <a href="/"><FaBehanceSquare  /></a>
                     </li>
                 </ul>
             </section>
 
             <section className="legal-footer">
-                <ul className="footer-legal-list">
-                    <li>&copy; {newDate} John Nicholson</li>
-                </ul>
+                <div className="footer-legal-list">
+                    <p>&copy; {newDate} John Nicholson</p>
+                </div>
             </section>
         </footer>
     )
