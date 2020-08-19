@@ -8,6 +8,7 @@ footer {
     flex-direction: column;
     color:$white-smoke;
     background-color: $dark-background;
+  
 }
 
 footer a {
@@ -34,15 +35,15 @@ a:hover {
 }
 
 .main-footer-item {
+    margin: auto;
     padding: 1.25rem;
     min-width: 12.5rem 
+    
 }
-
-
 
 .footer-about-links a {
     padding-left:0;
-   
+   font-size: 24px;
 }
 
 .footer-clock{
@@ -61,11 +62,16 @@ a:hover {
 }
 .social-footer,
 .legal-footer{
+    text-align: center;
     margin-bottom: 1.25em;
     padding: 1em;
 }
 
+
 .social-list {
-    font-size: 2em;
+    font-size: 1.8em;
 }
+
+
+
 

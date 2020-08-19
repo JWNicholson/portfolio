@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
+   
     <div className="App">
        <Header/> 
      
@@ -15,8 +16,9 @@ function App() {
        <button className="btn">Well, Alright</button>
        <Clock />
        <StartStop />
-     <Footer />
+       <Footer />
     </div>
+   
   );
 }
 

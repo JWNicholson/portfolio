@@ -5,7 +5,9 @@ import Clock from '../Clock/Clock';
 import { 
     FaLinkedin, 
     FaGithubSquare, 
-    FaBehanceSquare 
+    FaBehanceSquare ,
+    FaHome,
+    FaEnvelope
     } from 'react-icons/fa'
 
 
@@ -22,33 +24,31 @@ export default function Footer () {
                 </div>
 
                 <div className="main-footer-item">
-                    <h2 className="main-footer-title">
-                        About Me
-                    </h2>
+                   
                   
 
                      <div className="footer-about-links">
-                     <a href="/">Home</a>
+                     <a href="/" className="fa-icon"><FaHome /></a>
                      <a href="/">Projects</a>
                      <a href="/">Blog</a>
                      </div>
                 </div>
                 <div className="main-footer-item">
-                    <h2 className="main-footer-title">
-                        Contact Me
-                    </h2>
-                    <p>Email</p>
+                   <a href="/"> <h2 className="main-footer-title">
+                        Contact Me &#160;&#160; <FaEnvelope />
+                    </h2></a>
+                    
                     
                 </div>
 
-                <div className="main-footer-irem">
+                <div className="main-footer-item">
                 <p className="footer-clock"><Clock /></p>
                 </div>
             </section>
 
             <section className="social-footer">
                 <ul className="social-list">
-                    <li>
+                    <li className="social-links">
                         <a href="/"><FaLinkedin /></a>
                         <a href="/"><FaGithubSquare /></a>
                         <a href="/"><FaBehanceSquare  /></a>

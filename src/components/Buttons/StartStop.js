@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function StartStop(){
-    const [color, setColor] = useState('green')
+    const [color, setColor] = useState('green');
     const [toggle, setToggle] = useState(false);
 
     //onClick function to change button background:color and provide True or False to toggle button text
