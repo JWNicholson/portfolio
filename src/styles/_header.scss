@@ -64,3 +64,32 @@ button.login-btn{
     display: block;
 }
 
+/*Submenu up from small screens */
+.top-nav-submenu {
+    display:none;
+}
+
+.top-nav-submenu-active .top-nav-submenu {
+    display:block;
+}
+
+.has-submenu {
+    font-size: 0.75rem;
+}
+
+.has-submenu > a::after {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 900; 
+    content: "\f078";
+    color: white;
+}
+
+.top-nav-subitem a {
+    padding:0.625rem 0.9rem ;
+}
+
+.top-nav-submenu-active {
+    background-color:$dark-background;
+    border-radius: $br-4;
+}
