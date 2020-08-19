@@ -1,0 +1,66 @@
+nav{
+    background:$prussian-blue;
+    padding: 0 1rem;
+}
+
+a{
+    color: $white-smoke;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding:0.47rem  0.625rem 0.47rem 0;
+}
+
+.top-nav-item {
+    padding: 0.625rem;
+}
+
+button.login-btn{
+    padding: 1rem ;
+    font-size: 1.5rem;
+}
+
+.top-nav-item:not(.button) a:hover {
+    color:$slate-gray;
+}
+
+/* small screens menu */
+
+.top-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-menu li a {
+    display: block;
+    padding: 1rem 0.325rem;
+}
+
+.top-menu li.top-nav-subitem a{
+    padding: 1rem;
+}
+
+.toggle{
+    order: 1;
+    font-size: 1.25rem;
+}
+
+button.login-btn{
+    order:2;
+}
+
+.top-nav-item {
+    order:3;
+    width: 100%;
+    text-align: center;
+    display:none;
+}
+
+.active .top-nav-item {
+    display: block;
+}
+
