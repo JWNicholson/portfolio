@@ -1,29 +1,30 @@
 import React from 'react';
 import './App.scss';
 
-import Clock from './components/Clock/Clock';
+
 import StartStop from './components/Buttons/StartStop';
 import Header from './components/Header/Header';
-
 import Footer from './components/Footer/Footer';
+
+import HomePage from './Pages/homePage';
 
 function App() {
  
   return (
     <>
      <div className="App">
-    <Header />
-    <main className="main-cntr">
-   
     
-     <button className="btn">Well, Alright</button>
-       <Clock />
+    <main className="main-cntr">
+    <Header />
+   <HomePage />
+    
+     
+      
        <StartStop />
     
        
-       
-       <Footer />
        </main>
+       <Footer />
     </div>
    
     </>

@@ -1,0 +1,37 @@
+
+
+aside {
+    flex:30%;
+    padding: 0 24px;
+    text-align: left;
+}
+
+.profile-img-ctnr img {
+    max-height: 400px;
+    width: auto;
+    margin:24px 0;
+}
+
+.home-page-main-content {
+    flex:70%;
+  
+}
+
+.home-page-content-card {
+    background:$white-smoke;
+    width:80%;
+    margin:0 auto 2em ;
+    padding: 1.25em 1.25em 2em;
+    border:1px solid lightblue;
+    border-radius: $br-4;
+    box-shadow: $box-shadow;
+}
+
+
+
+.home-page-content-card img {
+    max-width:98%;
+    margin:2em auto;
+
+    
+}

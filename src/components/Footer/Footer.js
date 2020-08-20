@@ -18,10 +18,10 @@ export default function Footer () {
         
         <footer>
             <section className="main-footer">
-                <div className="main-footer-item">
+                {/* <div className="main-footer-item">
                     <h2>John Nicholson</h2>
                     <h4>Full Stack Developer</h4>
-                </div>
+                </div> */}
 
                 <div className="main-footer-item">
                    

@@ -10,6 +10,9 @@
 @import 'styles/backdrop';
 @import 'styles/footer';
 
+//page styles
+@import 'styles/pages/homePage';
+
 .App {
     display: flex;
     flex-direction: column;
@@ -17,11 +20,19 @@
     //min-height: 100vh;
     height: 100%;
     margin-top: 0;
+    background:aliceblue;
+    padding: 2rem 4rem;
 }
 
 
 .main-cntr {
     margin-top: 64px;
+   
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
