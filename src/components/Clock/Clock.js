@@ -4,15 +4,17 @@ import React, { useState, useEffect } from 'react';
 
 const Clock = props => {
     const [time, setTime] = useState(new Date())
-    const [day, setDay] = useState(new Date().getDay())
+    //const [day, setDay] = useState(new Date().getDay())
 
     let d = new Date();
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const year =  new Date().getFullYear();
 
 
     //set the time with js Date()
     const timeChange = () => {
-        //setTime(d);
+        setTime(d);//works without thiis. ?refactor to eliminate timeCange()?
         // setDay(new Date()[.getDay()])
     }
 
@@ -31,8 +33,8 @@ const Clock = props => {
             
         </div>
 
-        <div>
-            <p>Date: {days[d.getDay()]}</p>
+        <div className="date-ctnr">
+        <h3>{days[d.getDay()]}, {months[d.getMonth()]} {year}</h3>
         </div>
         </>
     )

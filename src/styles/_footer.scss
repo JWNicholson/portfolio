@@ -52,15 +52,15 @@ a:hover {
     margin:1.2rem 0;
 }
 
-.footer-clock {
-    background-color:firebrick;
-    border-radius:$br-4;
-}
-
 .footer-clock h2 {
     font-size: 1rem;
     
 }
+
+.footer-clock h3 {
+    font-size: 0.9rem;
+}
+
 .social-footer,
 .legal-footer{
     text-align: center;
