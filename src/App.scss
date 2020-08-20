@@ -3,13 +3,29 @@
 @import 'styles/utilities';
 @import 'styles/buttons';
 @import 'styles/clock';
-@import 'styles/header';
+// @import 'styles/header';
+@import 'styles/toolbar';
+@import 'styles/sidedrawer.scss';
+@import 'styles/drawerToggleBtn';
+@import 'styles/backdrop';
 @import 'styles/footer';
 
 .App {
     text-align: center;
-    min-height: 100vh;
+    // min-height: 100vh;
+
+    height: 100%;
+    margin-top: 0;
 }
+
+
+.main-cntr {
+    margin-top: 64px;
+}
+
+
+
+ 
 
 
 
