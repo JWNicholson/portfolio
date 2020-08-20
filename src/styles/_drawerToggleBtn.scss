@@ -1,12 +1,6 @@
 .toggle-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 24px;
-    width: 32px;
-    background:transparent;
-    border:none;
-    cursor: pointer;
+    display:none;
+
 }
 
 .toggle-btn:focus {
@@ -17,4 +11,17 @@
     width:30px;
     height: 2px;
     background:$white-smoke;
+}
+
+@media(max-width: 768px) {
+    .toggle-btn {
+            display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 32px;
+    background:transparent;
+    border:none;
+    cursor: pointer;
+    }
 }
