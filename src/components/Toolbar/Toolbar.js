@@ -13,7 +13,18 @@ const toolbar = props => (
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/">Contact Me</a></li>
-                    <li><a href="/">Projects</a></li>
+                    <li className="dropdown">
+                        <button className="dropdown-btn">Projects</button>
+                           <div className="dropdown-content">
+                           <a href="/">NASA Pic Of The Day</a>
+                           <a href="/">Game Of Life</a>
+                           <a href="/">Prisoner Skills</a>
+                           <a href="/">Labs Project</a>
+                           <a href="/">Weather App</a>
+                           </div>
+                            
+                            
+                    </li>
                 </ul>
             </div>
         </nav>
