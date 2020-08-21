@@ -28,9 +28,9 @@ export default function Footer () {
                   
 
                      <div className="footer-about-links">
-                     <a href="/" className="fa-icon"><FaHome /></a>
-                     <a href="/">Projects</a>
-                     <a href="/">Blog</a>
+                     <a href="/" className="fa-icon"><FaHome />  Home</a>
+                     {/* <a href="/">Projects</a>
+                     <a href="/">Blog</a> */}
                      </div>
                 </div>
                 <div className="main-footer-item">
