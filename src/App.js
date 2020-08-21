@@ -8,6 +8,7 @@ import './App.scss';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
+
 import HomePage from './Pages/homePage';
 import GameOfLifePage from './Pages/gameOfLifePage';
 import NasaPicPage from './Pages/nasaPicPage';
@@ -34,7 +35,7 @@ function App() {
       
        {/* <StartStop /> */}
     
-       
+      
        </main>
      
     </div>

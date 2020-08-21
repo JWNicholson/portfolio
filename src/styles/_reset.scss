@@ -19,7 +19,7 @@ h3,
 h4,
 p,
 ul[class],
-ol[class],
+// ol[class],
 li,
 figure,
 figcaption,
@@ -38,8 +38,9 @@ body {
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
-ul,
-ol {
+// ul,
+// ol 
+ul{
   list-style: none;
   padding-left: 0;
   margin-left: 0;

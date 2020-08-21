@@ -18,7 +18,7 @@ const sideDrawer = props => {
                     <div className="side-drawer-dropdown-content">
                         <a href="/nasapic">NASA Pic Of The Day</a>
                         <a href="/gameoflife">Game Of Life</a>
-                        <a href="weather">Weather App</a>
+                        <a href="/weather">Weather App</a>
                     </div>
                     </div>  
                 </li>             
