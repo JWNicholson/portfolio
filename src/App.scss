@@ -3,7 +3,8 @@
 @import 'styles/utilities';
 @import 'styles/buttons';
 @import 'styles/clock';
-// @import 'styles/header';
+
+//component styles
 @import 'styles/toolbar';
 @import 'styles/sidedrawer.scss';
 @import 'styles/drawerToggleBtn';
@@ -12,12 +13,14 @@
 
 //page styles
 @import 'styles/pages/homePage';
+@import 'styles/pages/gameoflife';
+@import 'styles/pages/nasapic';
+@import 'styles/pages/weather';
 
 .App {
     display: flex;
     flex-direction: column;
     text-align: center;
-    //min-height: 100vh;
     height: 100%;
     margin-top: 0;
     background:aliceblue;

@@ -30,7 +30,8 @@
     margin:0 0.8rem ;
 }
 
-.side-drawer a {
+.side-drawer a,
+button.side-drawer-dropdown-btn {
     color: $prussian-blue;
     font-size: 1.2rem;
 }
@@ -38,4 +39,20 @@
 .side-drawer a:hover,
 .side-drawer a:active {
     color:$apple-green;
+}
+
+button.side-drawer-dropdown-btn {
+    background:transparent;
+    border:none;
+}
+
+.side-drawer-dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: -112px;
+    background-color: $white-smoke;
+    min-width: 160px;
+    border-radius: $br-4;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }

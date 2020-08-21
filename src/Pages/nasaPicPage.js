@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class GameOfLife extends Component {
+export default class NasaPicPage extends Component {
     render() {
         return (
             <div>
-               <h1>Conway's Game Of Life</h1>
+                <h1>NASA pic of day</h1>
             </div>
         )
     }
