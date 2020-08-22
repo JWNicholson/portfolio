@@ -154,12 +154,76 @@ const startStop = () => {
   }
 }
 
-/* click handlers */
+const clearGrid = () => {
+  console.log("clearGrid button")
+  if (running) {
+    setRunning(!running)
+  }
+  setFrameOne(newBoard())
+  setFrameTwo(newBoard())
+  setGenCount(0)
+}
+
+const beehive = () => {
+  console.log("beehive")
+  const newGrid = Array.from(grid);
+  newGrid[16][16] = 1;
+  newGrid[17][16] = 1;
+  newGrid[17][15] = 1;
+  newGrid[18][14] = 1;
+  newGrid[19][15] = 1;
+  newGrid[19][16] = 1;
+  newGrid[18][17] = 1;
+
+  if (activeFrame === 1) {
+    setFrameOne(newGrid);
+  } else {
+    setFrameTwo(newGrid);
+  }
+}
+
+const spaceShip = () => {
+  console.log("spaceShip")
+  const newGrid = Array.from(grid);
+  newGrid[11][20] = 1;
+  newGrid[14][16] = 1;
+  newGrid[15][19] = 1;
+  newGrid[15][18] = 1;
+  newGrid[15][17] = 1;
+  newGrid[15][16] = 1;
+  newGrid[14][16] = 1;
+  newGrid[13][16] = 1;
+  newGrid[12][17] = 1;
+  newGrid[14][20] = 1;
+  if (activeFrame === 1) {
+    setFrameOne(newGrid);
+  } else {
+    setFrameTwo(newGrid);
+  }
+}
+
+const slower = () => {
+  console.log("slower")
+  setSpeed(1000)
+}
+
+const faster = () => {
+  console.log("faster")
+  setSpeed(50)
+}
+
+const oneStep = () => {
+  console.log("oneStep")
+  nextGen()
+}
+
+/* click multi handlers */
 const runBtnHandler = () =>{
    console.log("runBtnHandler")
    startStop()
    toggleBtn()
 }
+
 
 /** end button functions */
 
@@ -207,26 +271,43 @@ const runBtnHandler = () =>{
           </div>     
 
             <div className="gol-cntrl-panel">
-            
-            <button className="power-btn" data-cy="pwrbtn"
-             style={{background:color}}
-                onClick={runBtnHandler}>   
-                {toggle?'Stop': 'Start'}
-            </button>
+            {/* start/stop */}
+              <button className="power-btn" 
+                      data-cy="power-btn"
+                      style={{background:color}}
+                      onClick={runBtnHandler}>   
+                      {toggle?'Stop': 'Start'}
+              </button>
 
-           
+                {/* clear grid */}
+              <button className="clear-btn"
+                      data-cy="clear-btn"
+                      onClick={clearGrid}
+                      >Clear</button> 
 
-              <button>Clear</button> 
+              <button className="beeHive-btn"
+                      data-cy="beeHive-btn"
+                      onClick={beehive}
+                      >Beehive</button>
 
-              <button>Beehive</button>
+              <button className="spaceShip-btn"
+                      data-cy="spaceShip-btn"
+                      onClick={spaceShip}
+                      >Spaceship</button>
 
-              <button>Spaceship</button>
+              <button className="slower-btn"
+                      data-cy="slower-btn"
+                      onClick={slower}
+                      >Slower</button>
 
-              <button>Slower</button>
+              <button className="faster-btn"
+                      data-cy="faster-btn"
+                      onClick={faster}
+                      >Faster</button>
 
-              <button>Faster</button>
-
-              <button>One Step</button>
+              <button className="oneStep-btn"
+                      data-cy="oneStep-btn"
+                      onClick={oneStep}>One Step</button>
               </div>
              
 
