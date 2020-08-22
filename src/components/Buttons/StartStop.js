@@ -14,7 +14,7 @@ function StartStop(){
           setColor('green')
       }
    
-       }
+    }
     
     return(
         <div className="power-btn-ctnr">

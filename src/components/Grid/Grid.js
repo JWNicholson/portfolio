@@ -1,6 +1,8 @@
 import React, {useState,useRef, useEffect } from 'react';
 
 
+
+
 //Set the map coordinates pattern is allowed to travel
 const patternArea = [
   [-1, -1],
@@ -128,6 +130,40 @@ useEffect(() => {
 return () => clearInterval(gameEngine);
 }, [activeFrame,running]);
 
+/** Button functions */
+const [color, setColor] = useState('green');
+const [toggle, setToggle] = useState(false);
+const toggleBtn =()=>{
+  setToggle(!toggle)
+  if(toggle === false){
+      //console.log('false')
+      setColor('red')
+      console.log("runBtnHandler red")
+  }else{
+      setColor('green')
+      console.log("runBtnHandler green")
+  }
+}
+
+const startStop = () => {
+  if (running) {
+    setRunning(!running)
+    console.log("startstop")
+  }else{
+    console.log("not running")
+  }
+}
+
+/* click handlers */
+const runBtnHandler = () =>{
+   console.log("runBtnHandler")
+   startStop()
+   toggleBtn()
+}
+
+/** end button functions */
+
+
   return (
     <div className="gol-grid-wrapper">
 
@@ -171,7 +207,14 @@ return () => clearInterval(gameEngine);
           </div>     
 
             <div className="gol-cntrl-panel">
-              <button>Start/Stop</button>
+            
+            <button className="power-btn" data-cy="pwrbtn"
+             style={{background:color}}
+                onClick={runBtnHandler}>   
+                {toggle?'Stop': 'Start'}
+            </button>
+
+           
 
               <button>Clear</button> 
 
