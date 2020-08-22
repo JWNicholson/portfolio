@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 //import Canvas from '../components/Canvas/Canvas';
-//import Grid from '../components/Grid/Grid';
+import Grid from '../components/Grid/Grid';
 
 
 
@@ -23,7 +23,7 @@ export default class GameOfLife extends Component {
                        <li>Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction</li>
                  </ul>
            
-            {/* <Grid /> */}
+             <Grid /> 
                  {/* <Canvas /> */}
             </div>
         
