@@ -18,7 +18,13 @@ let rows = 50;
 let cols = 50;
 
 //build a Grid
-
+const newBoard = () => {
+  const clearedGrid = [];
+  for(let i = 0; i < rows; i++){
+    clearedGrid.push(Array.from(Array(cols), () => 0));
+  }
+  return clearedGrid;
+}
 
 // Start with an empty Grid
 
@@ -61,3 +67,27 @@ const Grid = () => {
 }
 
 export default Grid;
+
+
+
+
+//******** Notes ***********/
+
+// Use React to create Conway's Game of Life
+
+//Steps
+/// Generate a new board (grid)
+
+/// Generate the newboard cells & life status
+//// Use game rules to check each live cell for neighbors - live or die accoridingly
+
+/// Start/Stop button to start game
+/// Pause button to pause
+/// Step button to move one generation at a time
+/// Speed selector
+/// Button to choose starting pattern or random
+/// Counter to display current generation number
+
+
+
+
