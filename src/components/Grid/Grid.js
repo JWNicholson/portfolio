@@ -16,8 +16,8 @@ const patternArea = [
 ];
 
 // Grid size
-let rows = 50;
-let cols = 50;
+let rows = 38;
+let cols = 38;
 
 //build a Grid
 const newBoard = () => {
@@ -229,12 +229,9 @@ const runBtnHandler = () =>{
 
 
   return (
-    <div className="gol-grid-wrapper">
+<div className="gol-grid-wrapper">
 
-<div className="gol-instruction-container">
-            <h4>How To Play</h4>
-            <p>Click individual cells to make your own pattern or use one of the buttons below. Then click Start. When the simulation is running, using the buttons you can speed it up or slow it down. To slow it down the first time you must speed it up first. To see one generation at a time, while the sim is running, hit the stop button, then you can use the One Step button. To start fresh, use the clear button.</p>
-          </div>   
+ 
 
       <div className="gol-grid-ctnr" 
          style={{
@@ -266,11 +263,16 @@ const runBtnHandler = () =>{
          )}
       </div>
 
-          <div className="gol-counter-container">
-               <h2 className="gol-count">Generation Count: {genCount}</h2>   
-          </div>     
+     
 
-            <div className="gol-cntrl-panel">
+           
+      <div className="gol-cntrl-panel">
+
+      <div className="gol-counter-cntr">
+               <h2 className="gol-count">Generation Count: {genCount}</h2>   
+          </div> 
+
+              <div className="gol-cntrl-btns">
             {/* start/stop */}
               <button className="power-btn" 
                       data-cy="power-btn"
@@ -309,8 +311,7 @@ const runBtnHandler = () =>{
                       data-cy="oneStep-btn"
                       onClick={oneStep}>One Step</button>
               </div>
-             
-
+              </div>
 
     </div>
   )
@@ -318,8 +319,6 @@ const runBtnHandler = () =>{
 }
 
 export default Grid;
-
-
 
 
 //******** Notes ***********/

@@ -28,7 +28,7 @@ export default function homePage() {
 
             <section className="home-page-main-content">
 
-                <section className="home-page-content-card">
+                <section className="content-card">
                 <h2>Something Good Here</h2>
                 <img src="https://images.unsplash.com/photo-1507049287156-210a14f80685?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1865&q=80" alt="cloudy sunrise"/>
 
@@ -38,7 +38,7 @@ export default function homePage() {
                 <button><a href="/gameoflife">Check it out</a></button>
                 </section>
 
-                <section className="home-page-content-card">
+                <section className="content-card">
                 <h2>Something Good Here</h2>
                 <img src="https://images.unsplash.com/photo-1541742410245-c2653591f8d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1780&q=80" alt="overlook bench"/>
 
@@ -48,7 +48,7 @@ export default function homePage() {
                 <button><a href="/nasapic">Check it out</a></button>
                 </section>
 
-                <section className="home-page-content-card">
+                <section className="content-card">
                 <h2>Something Good Here</h2>
                 <img src="https://images.unsplash.com/photo-1542317426-11e12eff91bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80" alt="autumn trees"/>
 

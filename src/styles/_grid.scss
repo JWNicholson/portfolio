@@ -1,3 +1,22 @@
-.gol-cntrl-panel {
-  border:2px solid darkcyan;
+.gol-grid-wrapper{
+  //border:2px hotpink solid;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .gol-grid-ctnr{
+  
+    box-shadow: $box-shadow;
+    margin: 1rem;
+
+
+    border:12px solid $prussian-blue;
+    border-radius:$br-4;
+   
+  }
+  
+  .gol-cntrl-panel {
+    border:2px solid darkcyan;
+  }
 }
+

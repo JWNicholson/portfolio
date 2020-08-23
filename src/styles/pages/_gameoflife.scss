@@ -1,0 +1,34 @@
+.gol-instruction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   width:100%;
+
+   .content {
+       //background:red;
+       width:100%;
+       display:flex;
+       flex-direction: column;
+       align-self: start;
+       margin: 1rem;
+       
+        h1,h2,h3,h4,h5,h6 {
+            align-self: start;
+        }
+
+        p {
+            text-align: left;
+        }
+
+       }
+}
+
+.gol-cntrl-panel {
+    background: rgba(230,250,255, 0.90);
+
+    .gol-counter-cntr {
+        
+        text-align: left;
+        padding: 0.53em;
+    }
+}
