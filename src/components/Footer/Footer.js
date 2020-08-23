@@ -24,9 +24,6 @@ export default function Footer () {
                 </div> */}
 
                 <div className="main-footer-item">
-                   
-                  
-
                      <div className="footer-about-links">
                      <a href="/" className="fa-icon"><FaHome />  Home</a>
                      {/* <a href="/">Projects</a>

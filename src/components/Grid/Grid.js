@@ -1,5 +1,10 @@
 import React, {useState,useRef, useEffect } from 'react';
 
+import {
+  FaAngleDoubleDown,
+  FaAngleDoubleUp
+} from 'react-icons/fa';
+
 
 
 
@@ -202,6 +207,21 @@ const spaceShip = () => {
   }
 }
 
+const random = () => {
+  const randomGrid = [];
+  for (let i = 0; i < rows; i++) {
+    randomGrid.push(
+      Array.from(Array(cols), () => (Math.random() > 0.5 ? 1 : 0))
+    );
+  }
+  if (activeFrame === 1) {
+    setFrameOne(randomGrid);
+  } else {
+    setFrameTwo(randomGrid);
+  }                    
+  }
+
+
 const slower = () => {
   console.log("slower")
   setSpeed(1000)
@@ -262,17 +282,14 @@ const runBtnHandler = () =>{
             ))
          )}
       </div>
+       
+      <div className="cntrl-panel">
 
-     
-
-           
-      <div className="gol-cntrl-panel">
-
-      <div className="gol-counter-cntr">
-               <h2 className="gol-count">Generation Count: {genCount}</h2>   
+      <div className="counter-cntr">
+               <p className="count">Generation Count: {genCount}</p>   
           </div> 
 
-              <div className="gol-cntrl-btns">
+              <div className="cntrl-btns-cntr">
             {/* start/stop */}
               <button className="power-btn" 
                       data-cy="power-btn"
@@ -287,6 +304,8 @@ const runBtnHandler = () =>{
                       onClick={clearGrid}
                       >Clear</button> 
 
+                <hr></hr>
+              <h3>Shapes</h3>
               <button className="beeHive-btn"
                       data-cy="beeHive-btn"
                       onClick={beehive}
@@ -297,15 +316,36 @@ const runBtnHandler = () =>{
                       onClick={spaceShip}
                       >Spaceship</button>
 
+              <button className="random-btn" 
+                      data-cy="random-btn"
+                      onClick={random}
+                      // onClick={() => {
+                      //   const randomGrid = [];
+                      //   for (let i = 0; i < rows; i++) {
+                      //     randomGrid.push(
+                      //       Array.from(Array(cols), () => (Math.random() > 0.5 ? 1 : 0))
+                      //     );
+                      //   }
+                      //   if (activeFrame === 1) {
+                      //     setFrameOne(randomGrid);
+                      //   } else {
+                      //     setFrameTwo(randomGrid);
+                      //   }
+                      // }}
+                      >Random</button>
+
+                <hr></hr>
+
+                <h3>Speed Controls</h3>
               <button className="slower-btn"
                       data-cy="slower-btn"
                       onClick={slower}
-                      >Slower</button>
+                      >Slower <FaAngleDoubleDown/></button>
 
               <button className="faster-btn"
                       data-cy="faster-btn"
                       onClick={faster}
-                      >Faster</button>
+                      >Faster <FaAngleDoubleUp /></button>
 
               <button className="oneStep-btn"
                       data-cy="oneStep-btn"
