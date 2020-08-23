@@ -1,30 +1,47 @@
-import React from 'react'
+import React from 'react';
+
+import {
+    FaReact,
+    FaHtml5,
+    FaCss3,
+    FaSass,
+    FaNode,
+    FaPython,
+}from 'react-icons/fa'
 
 export default function homePage() {
     return (
         <section className="home-page-ctnr row">
-            <aside>
-                <h3>About Me</h3>
+            <section className="about-me">
+                
                 <div className="profile-img-ctnr">
+                
                 <img src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80" alt="my img placeholder"/>
                 </div>
                 <div className="my-info">
+                <h3>About Me</h3>
                 <p>
                 Spiff up your work with our random beer Lorem Ipsum generator. Designs can be incomplete without text to fill them and normal placeholder text (filler text) can be boring. Give your designs that extra buzz by using something thats been around as long as people have. Beer! 
                 </p>
+                
                 <div className="skills-section">
+
                 <h4>Skills</h4>
-                    <ul>
-                    <li>React JS</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SASS</li>
-                    <li>Express</li>
-                    </ul>
+                <div className="skill-badges-cntr">
+                    <div className="skill-badge react"><FaReact size={42}  /></div>
+                    <div className="skill-badge html5"><FaHtml5 size={42}/></div>
+                    <div className="skill-badge css3"><FaCss3 size={42}/></div>
+                    <div className="skill-badge sass"><FaSass size={42}/></div>
+                    <div className="skill-badge node"><FaNode size={42}/></div>
+                    <div className="skill-badge express"><em>Express JS</em></div>
+                    <div className="skill-badge python"><FaPython size={42}/></div>
+                    <div className="skill-badge mysql">MySql</div>
+                    
+                   </div>
                    </div>
                   </div> 
             
-            </aside>
+            </section>
 
             <section className="home-page-main-content">
 

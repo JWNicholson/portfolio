@@ -19,7 +19,7 @@ const patternArea = [
 
 // Grid size
 let rows = 38;
-let cols = 38;
+let cols = 48;
 
 //build a Grid
 const newBoard = () => {
