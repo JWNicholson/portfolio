@@ -5,9 +5,6 @@ import {
   FaAngleDoubleUp
 } from 'react-icons/fa';
 
-
-
-
 //Set the map coordinates pattern is allowed to travel
 const patternArea = [
   [-1, -1],
@@ -118,22 +115,22 @@ speedRef.current = speed;
  const grid = activeFrame === 1 ? frameOne : frameTwo;
 
   //Game Logic
-useEffect(() => {
-  let gameEngine = null;
-
-  if (activeFrame && running){
-    gameEngine = setInterval(() => {
-        nextGen();
-      },
-      speedRef.current,
-      frameOneRef.current
-    );
-  }else if (!running){
-    clearInterval(gameEngine);
-    return;
-  }
-return () => clearInterval(gameEngine);
-}, [activeFrame,running]);
+  useEffect(() => {
+    let gameEngine = null;
+    if (activeFrame && running) {
+      gameEngine = setInterval(
+        () => {
+          nextGen();
+        },
+        speedRef.current,
+        frameOneRef.current
+      );
+    } else if (!running) {
+      clearInterval(gameEngine);
+      return;
+    }
+    return () => clearInterval(gameEngine);
+  }, [activeFrame,nextGen, running]);
 
 /** Button functions */
 const [color, setColor] = useState('green');
@@ -151,12 +148,7 @@ const toggleBtn =()=>{
 }
 
 const startStop = () => {
-  if (running) {
-    setRunning(!running)
-    console.log("startstop")
-  }else{
-    console.log("not running")
-  }
+  setRunning(!running)
 }
 
 const clearGrid = () => {
