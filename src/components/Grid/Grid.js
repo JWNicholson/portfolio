@@ -210,17 +210,19 @@ const spaceShip = () => {
 const random = () => {
   const randomGrid = [];
   for (let i = 0; i < rows; i++) {
+    console.log("random button")
     randomGrid.push(
       Array.from(Array(cols), () => (Math.random() > 0.5 ? 1 : 0))
     );
   }
+
+
   if (activeFrame === 1) {
     setFrameOne(randomGrid);
   } else {
     setFrameTwo(randomGrid);
   }                    
   }
-
 
 const slower = () => {
   console.log("slower")
@@ -263,7 +265,7 @@ const runBtnHandler = () =>{
         {grid.map((row, i) =>
             row.map((col, j) => (
               <div
-                className={grid[i][j] ? "gol-grid-cells" : ""}
+                className={grid[i][j] ? "grid-cells" : ""}
                 key={`${i}-${j}`}
                 onClick={() => {
                   if (running) {

@@ -16,6 +16,20 @@
    
   }
 
+  .grid-cells {
+    
+    animation-name: example;
+    animation: flash 4s ease-out infinite;
+
+    @keyframes flash {
+      from {
+        background-color: red;
+      }
+      to {
+        background-color: blue;
+      }
+    }
+  }
   
   .cntrl-panel {
     //border:2px solid darkcyan;
@@ -74,8 +88,6 @@
         .oneStep-btn {
           background: $carolina-blue;
         }
-
-      
 
         // .oneStep-btn {
         //   background: $apple-green;
