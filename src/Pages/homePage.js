@@ -1,5 +1,7 @@
 import React from 'react';
 
+import GOLimg from '../assets/jwn-game-of-life.jpg';
+
 import {
     FaReact,
     FaHtml5,
@@ -46,13 +48,17 @@ export default function homePage() {
             <section className="home-page-main-content">
 
                 <section className="content-card">
-                <h2>Something Good Here</h2>
-                <img src="https://images.unsplash.com/photo-1507049287156-210a14f80685?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1865&q=80" alt="cloudy sunrise"/>
+                <h2>John Conway's Game Of Life</h2>
+                <img src={GOLimg}  alt="game of life jwns version"/>
 
-                <p>
-                Now and then, a gentle Honey Brown pees on a crazy Sierra Nevada. The pit viper is plowed. Furthermore, a fat Home brew beams with joy, and the miller inside the colt 45 avoids contact with a tanked Rolling Rock. For example, a Hoptoberfest around a malt indicates that a tornado brew falls in love with a wasted hops. Sometimes the gratifying stein ruminates, but a Hefeweizen always gives lectures on morality to a Hops Alligator Ale about a booze!
-                </p>
-                <button><a href="/gameoflife">Check it out</a></button>
+                <div className="card-content-ctnr">
+                <p>The Game Of Life is a simulation developed in 1970 by mathematician John Conway. It applies rules to create Cellular Automation. Cellular Automation is a grid of cells that cycle through different states. It is "Turing Complete".Turing Complete means it can manipulate data-manipulation rule sets.</p>
+
+                <p>The simulation follows 4 simple rules, which give infinite different results. Sometimes it is a repeating sequence (somtimes referred to as a glider).
+        Occasionaly all of the cells die or settle into a still pattern.
+        </p> 
+                <a href="/gameoflife" className="card-btn">Check it out</a>
+                </div>
                 </section>
 
                 <section className="content-card">
@@ -62,7 +68,7 @@ export default function homePage() {
                 <p>
                 Now and then, a gentle Honey Brown pees on a crazy Sierra Nevada. The pit viper is plowed. Furthermore, a fat Home brew beams with joy, and the miller inside the colt 45 avoids contact with a tanked Rolling Rock. For example, a Hoptoberfest around a malt indicates that a tornado brew falls in love with a wasted hops. Sometimes the gratifying stein ruminates, but a Hefeweizen always gives lectures on morality to a Hops Alligator Ale about a booze!
                 </p>
-                <button><a href="/nasapic">Check it out</a></button>
+                <a href="/nasapic" className="card-btn">Check it out</a>
                 </section>
 
                 <section className="content-card">
@@ -72,7 +78,7 @@ export default function homePage() {
                 <p>
                 Now and then, a gentle Honey Brown pees on a crazy Sierra Nevada. The pit viper is plowed. Furthermore, a fat Home brew beams with joy, and the miller inside the colt 45 avoids contact with a tanked Rolling Rock. For example, a Hoptoberfest around a malt indicates that a tornado brew falls in love with a wasted hops. Sometimes the gratifying stein ruminates, but a Hefeweizen always gives lectures on morality to a Hops Alligator Ale about a booze!
                 </p>
-                <button><a href="/weather">Check it out</a></button>
+                <a href="/weather" className="card-btn">Check it out</a>
                 </section>
                 
             </section>

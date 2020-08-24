@@ -28,6 +28,29 @@
     
     .home-page-main-content {
         flex:70%;
+
+        .content-card{
+            text-align: left;
+        }
+        p{
+            margin-bottom: 1.2rem;
+        }
+
+        a.card-btn{
+            color:$white-smoke;
+            font-weight: 600;
+            text-decoration:none;
+            background:$red-orange;
+            border:1px solid $burnt-orange;
+            border-radius: $br-4;
+            padding: 0.5rem;
+            box-shadow: $box-shadow-2;
+        }
+
+        a.card-btn:hover{
+            background:darkslategray;
+            color:gray;
+        }
     }
 
     .skills-section {
@@ -103,9 +126,10 @@
             }
 
             .content-card{
+                
                 width:100%;
                 margin: 0;
-            }
+             }
         }
 
         .skill-badge {

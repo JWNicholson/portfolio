@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
-//import Canvas from '../components/Canvas/Canvas';
 import Grid from '../components/Grid/Grid';
-
 
 
 export default class GameOfLife extends Component {
@@ -12,16 +10,11 @@ export default class GameOfLife extends Component {
         return (
             <div className="gol-instruction-container">
                 <section className="content content-card">
-               <h1>Conway's Game Of Life</h1>
-               <p>The Game Of Life is a simulation developed in 1970 by mathematician John Conway. It applies rules to create Cellular Automation. Cellular Automation is a grid of cells that cycle through different states. It is "Turing Complete".Turing Complete means it can manipulate data-manipulation rule sets.</p>
-
-               <p>The simulation follows 4 simple rules, which give infinite different results. Sometimes it is a repeating sequence (somtimes referred to as a glider).</p> 
-        <p>Occasionaly all of the cells die or settle into a still pattern.</p>
-        <p><small>Note: this version is not mobile friendly yet.</small></p>
-               </section>
-                <section className="content content-card">
+               <h1>John Conway's Game Of Life</h1>
+        
+             
                  
-                 <h2>Rules</h2>
+                 <h3>Rules</h3>
                  
                    <p>1. Any live cell with fewer than two live neighbors dies, as if by underpopulation</p>
                        <p>2. Any live cell with two or three live neighbors lives on to the next generation</p>
