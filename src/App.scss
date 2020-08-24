@@ -27,6 +27,10 @@
     margin: 0 auto;
     background:aliceblue;
     padding: 2rem 4rem;
+
+    border:1px solid hotpink;
+
+ 
 }
 
 
@@ -42,7 +46,7 @@
 
 .content-card {
     background:$white-smoke;
-    width:80%;
+    //width:80%;
     margin:0 auto 2em ;
     padding: 1.25em 1.25em 2em;
     border:1px solid lightblue;
@@ -50,17 +54,19 @@
     box-shadow: $box-shadow;
 }
 
-
-
 .content-card img {
     max-width:98%;
     margin:2em auto;
-
-    
 }
 
 
+@media screen and (max-width: 600px){
+    .App{
+        margin:0;
+        padding: 0;
+}
 
+}
  
 
 

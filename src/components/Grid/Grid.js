@@ -18,8 +18,8 @@ const patternArea = [
 ];
 
 // Grid size
-let rows = 38;
-let cols = 48;
+let rows = 28;
+let cols = 38;
 
 //build a Grid
 const newBoard = () => {
@@ -58,8 +58,6 @@ const gameRules = (g) => {
   }
   return newGrid;
 };
-
-
 
 const Grid = () => {
 

@@ -34,7 +34,7 @@ const Clock = props => {
         </div>
 
         <div className="date-ctnr">
-        <h3>{days[d.getDay()]}, {months[d.getMonth()]} {year}</h3>
+        <h3>Today is {days[d.getDay()]}, {months[d.getMonth()]} {year}</h3>
         </div>
         </>
     )

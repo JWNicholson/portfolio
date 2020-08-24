@@ -74,6 +74,12 @@ a:hover {
     font-size: 1.8em;
 }
 
+@media screen and (max-width:600px){
+    .main-footer{
+        margin: auto;
+        flex-direction: column;
+    }
+}
 
 
 
