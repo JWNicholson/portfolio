@@ -22,5 +22,43 @@
         }
 
        }
+
+     
 }
+
+@media screen and (max-width:992px){
+    .gol-instruction-container{
+        //background:red;
+        width:98%;
+        margin:0 auto;
+        padding: 1.2rem;
+
+        .content{
+            margin:2rem auto;
+        }
+    }
+
+    .gol-grid-wrapper {
+        //background:bisque;
+        justify-content: space-between;
+
+        .gol-grid-ctnr {
+            margin:1rem 0;
+        }
+
+        .cntrl-panel {
+            margin-right: 0;
+            padding: 0 0.8rem;
+        }
+
+        .counter-cntr{
+            .count{
+                font-size: 1.3rem;
+                padding:0.8rem;
+            }
+        }
+
+    }
+  
+ }
 
