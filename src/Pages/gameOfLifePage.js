@@ -30,6 +30,7 @@ export default class GameOfLife extends Component {
             <p>
             To see one generation at a time, while the sim is running, hit the stop button, then you can use the One Step button. To start fresh, use the clear button.
                 </p> 
+                <small><em>This page works best in landscape mode on small screens</em></small>
                  </section>
            
              <Grid /> 

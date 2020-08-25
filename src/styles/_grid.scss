@@ -1,3 +1,9 @@
+.gol-instruction-container{
+  .content-card{
+    text-align: left;
+  }
+}
+
 .gol-grid-wrapper {
   //border:2px hotpink solid;
   display: flex;
@@ -50,8 +56,8 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      // justify-content: space-beteen;
-
+      text-align: center;
+      
       button {
         color: ghostwhite;
         font-weight: bold;
@@ -119,6 +125,15 @@
             width: 80%;
             margin: 1rem auto;
           }
+
+          .beeHive-btn,
+          .spaceShip-btn,
+          .random-btn,
+          .slower-btn,
+          .faster-btn,
+          .oneStep-btn {
+          padding: 4px;
+        }
         }
 
         .shapes-btn-group {
