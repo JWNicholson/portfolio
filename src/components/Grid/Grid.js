@@ -295,7 +295,8 @@ const Grid = () => {
 	/** end button functions */
 
 	return (
-		<div className="gol-grid-wrapper">
+		<div className="gol-grid-wrapper content-card">
+      
 			<div
 				className="gol-grid-ctnr"
 				style={{
@@ -303,6 +304,7 @@ const Grid = () => {
 					gridTemplateColumns : `repeat(${cols}, 18px)`
 				}}
 			>
+       
 				{grid.map((row, i) =>
 					row.map((col, j) => (
 						<div
@@ -324,15 +326,15 @@ const Grid = () => {
 							style={{
 								width: 18,
 								height: 18,
-								border: '1px solid lightgray',
+								border: '1px solid lightblue',
 								background: 'ghostwhite',
 								margin: '0'
 							}}
 						/>
 					))
 				)}
-			</div>
-
+        
+      </div>
 			<div className="cntrl-panel">
 				<div className="counter-cntr">
 					<p className="count">Generation Count: {genCount}</p>

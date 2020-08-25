@@ -1,23 +1,19 @@
-.gol-grid-wrapper{
+.gol-grid-wrapper {
   //border:2px hotpink solid;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width:100%;
+  width: 100%;
 
-  .gol-grid-ctnr{
-  
+  .gol-grid-ctnr {
     box-shadow: $box-shadow;
     margin: 1rem;
 
-
-    border:12px solid $prussian-blue;
-    border-radius:$br-4;
-   
+    border: 12px solid $prussian-blue;
+    border-radius: $br-4;
   }
 
   .grid-cells {
-    
     animation-name: example;
     animation: flash 4s ease-out infinite;
 
@@ -30,121 +26,148 @@
       }
     }
   }
-  
+
   .cntrl-panel {
     //border:2px solid darkcyan;
-     
+
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 0.53em;
+
+    .counter-cntr {
+      text-align: left;
+      margin-bottom: 0.8em;
+    }
+
+    .count {
+      color: $prussian-blue;
+      font-weight: bolder;
+      font-size: 1.5rem;
+    }
+
+    .cntrl-btns-cntr {
       display: flex;
       flex-direction: column;
-      margin: 1rem;
-      padding: 0.53em;
-  
-      .counter-cntr {
-          text-align: left;
-          margin-bottom: 0.8em;
-      }
-  
-      .count {
-        color: $prussian-blue;
-        font-weight: bolder;
-        font-size: 1.5rem;
-      }
+      flex-wrap: wrap;
+      // justify-content: space-beteen;
 
-      .cntrl-btns-cntr {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        // justify-content: space-beteen;
-        
-        button {
-         color:ghostwhite;
-         font-weight: bold;
-         border:1px solid darkslategray;
-         border-radius: $br-4;
-         width: 100%;
-         margin: 0.8rem;
-         box-shadow: $box-shadow-2;
-        } 
-
-        hr {
-          border-top:1px solid $dark-background;
-          width: 100%;
-        }
-
-        .clear-btn {
-          // width:5rem;
-          background:$burnt-orange;
-        }
-
-        .beeHive-btn,
-        .spaceShip-btn,
-        .random-btn {
-          background: $honey-yellow;
-        }
-
-       
-        .slower-btn,
-        .faster-btn,
-        .oneStep-btn {
-          background: $carolina-blue;
-        }
-
-        // .oneStep-btn {
-        //   background: $apple-green;
-        // }
-
+      button {
+        color: ghostwhite;
+        font-weight: bold;
+        border: 1px solid darkslategray;
+        border-radius: $br-4;
+        width: 100%;
+        margin: 0.8rem;
+        box-shadow: $box-shadow-2;
       }
 
-     
+      hr {
+        border-top: 1px solid $dark-background;
+        width: 100%;
+      }
+
+      .clear-btn {
+        // width:5rem;
+        background: $burnt-orange;
+      }
+
+      .beeHive-btn,
+      .spaceShip-btn,
+      .random-btn {
+        background: $honey-yellow;
+      }
+
+      .slower-btn,
+      .faster-btn,
+      .oneStep-btn {
+        background: $carolina-blue;
+      }
+    }
   }
 }
 
-@media screen and (max-width: 992px){
-
- 
-  .gol-grid-wrapper{
+@media screen and (max-width: 1024px) {
+  .gol-grid-wrapper {
     flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-  .gol-grid-ctnr{
-    width:73%;
-  }
-hr{
-  display: none;
-}
-  .cntrl-panel{
-    .cntrl-btns-cntr{
-      flex-direction: row;
-      
-     .power-clear-btn-group{
-       justify-items:flex-start;
-       h3{
-         color:red;
-       }
-       .clear-btn{
-         padding: 8px;
-       }
-     }
-  
-      .power-clear-btn-group,
-      .shapes-btn-group,
-      .speed-btn-group{
-        
-        height: 200px;
-        width:33%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-        button{
-          width:80%;
-          margin:1rem auto;
+    justify-content: flex-end;
+    padding: 10%;
+
+    .gol-grid-ctnr {
+      width: 654px;
+      //border:none;
+      box-shadow: none;
+      padding: 0;
+    }
+    hr {
+      display: none;
+    }
+    .cntrl-panel {
+      .cntrl-btns-cntr {
+        flex-direction: row;
+
+        .power-clear-btn-group,
+        .shapes-btn-group,
+        .speed-btn-group {
+          height: 200px;
+          width: 33%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          button {
+            width: 80%;
+            margin: 1rem auto;
+          }
+        }
+
+        .shapes-btn-group {
+          border-left: 1px solid $dark-background;
+          border-right: 1px solid $dark-background;
+        }
+
+        .power-clear-btn-group {
+          justify-content: flex-start;
+
+          .clear-btn {
+            padding: 8px;
+          }
         }
       }
     }
   }
-
 }
 
-}
+@media screen and (max-width: 992px) {
+  .gol-instruction-container {
+    //background:red;
+    width: 98%;
+    margin: 0 auto;
+    padding: 1.2rem;
 
+    .content {
+      margin: 2rem auto;
+    }
+
+    .gol-grid-wrapper {
+      //background:bisque;
+      justify-content: space-between;
+
+      .gol-grid-ctnr {
+        margin: 1rem 0;
+      }
+
+      .cntrl-panel {
+        margin-right: 0;
+        padding: 0 0.8rem;
+      }
+
+      .counter-cntr {
+        .count {
+          font-size: 1.3rem;
+          padding: 0.8rem;
+        }
+      }
+    }
+  }
+}
