@@ -2,7 +2,7 @@
   //border:2px hotpink solid;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   width:100%;
 
   .gol-grid-ctnr{
@@ -97,5 +97,54 @@
 
      
   }
+}
+
+@media screen and (max-width: 992px){
+
+ 
+  .gol-grid-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  .gol-grid-ctnr{
+    width:73%;
+  }
+hr{
+  display: none;
+}
+  .cntrl-panel{
+    .cntrl-btns-cntr{
+      flex-direction: row;
+      
+     .power-clear-btn-group{
+       justify-items:flex-start;
+       h3{
+         color:red;
+       }
+       .clear-btn{
+         padding: 8px;
+       }
+     }
+  
+      .power-clear-btn-group,
+      .shapes-btn-group,
+      .speed-btn-group{
+        
+        height: 200px;
+        width:33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        button{
+          width:80%;
+          margin:1rem auto;
+        }
+      }
+    }
+  }
+
+}
+
 }
 
