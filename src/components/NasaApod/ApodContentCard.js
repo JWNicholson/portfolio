@@ -3,8 +3,11 @@ import React from 'react';
 const ApodContentCard = (props) => {
 	return (
 		<div className="main-nasa-wrapper">
-			<div className="nasa-img-ctnr">
-				<h2>{props.title}</h2>
+            <div className="nasa-h1-ctnr">
+            <h1>NASA's Astronomy Picture Of The Day</h1>
+            </div>
+			<div className="nasa-img-ctnr content-card">
+				<h2 className="nasa-img-title">{props.title}</h2>
 				{/* check if url prop exists. If no, render message instead */}
 				{props.url ? (
 					<img src={props.url} alt="NASA astronomy pic of the day" />
