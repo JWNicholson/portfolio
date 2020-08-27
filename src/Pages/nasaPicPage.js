@@ -6,7 +6,6 @@ export default class NasaPicPage extends Component {
     render() {
         return (
             <div>
-                
                 <ApodGrid />
             </div>
         )

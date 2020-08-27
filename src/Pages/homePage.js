@@ -1,6 +1,7 @@
 import React from 'react';
 
 import GOLimg from '../assets/jwn-game-of-life.jpg';
+import MilkyWay from '../assets/MilkyWaySaltFlat.jpg'
 
 import { FaReact, FaHtml5, FaCss3, FaSass, FaNode, FaPython } from 'react-icons/fa';
 
@@ -72,18 +73,17 @@ export default function homePage () {
 				</section>
 
 				<section className="content-card">
-					<h2>Something Good Here</h2>
+					<h2>NASA's Astronomy Picture Of The Day</h2>
 					<img
-						src="https://images.unsplash.com/photo-1541742410245-c2653591f8d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1780&q=80"
-						alt="overlook bench"
+						src={MilkyWay}
+						alt="nasa pic of day"
 					/>
 
 					<p>
-						Now and then, a gentle Honey Brown pees on a crazy Sierra Nevada. The pit viper is plowed.
-						Furthermore, a fat Home brew beams with joy, and the miller inside the colt 45 avoids contact
-						with a tanked Rolling Rock. For example, a Hoptoberfest around a malt indicates that a tornado
-						brew falls in love with a wasted hops. Sometimes the gratifying stein ruminates, but a
-						Hefeweizen always gives lectures on morality to a Hops Alligator Ale about a booze!
+						This was a fun project built with ReactJS hooks, the moment plugin, and the Axios API promised based client.
+					</p>
+					<p>
+						One the important things I learned during this project was the importance of React's Effect hook for handling side effects. Without it, an API request can enter an infinite loop. My request rate to NASA's servers hit the maximum very fast, locking me out. I fixed that by using useEffect() in addition to using an API key. Having an API key raises the amount of requests you can make.
 					</p>
 					<a href="/nasapic" className="card-btn">
 						Check it out

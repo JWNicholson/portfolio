@@ -20,8 +20,6 @@ function App() {
     <>
      <div className="App">
 
-       
-    
     <main className="main-cntr">
     <Header />
 

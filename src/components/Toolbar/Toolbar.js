@@ -12,7 +12,7 @@ const toolbar = props => (
             <div className="toolbar-nav-items">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="mailto:john.nicholson812@gmail.com?">Contact Me</a></li>
                     <li className="dropdown">
                         <button className="dropdown-btn">Projects</button>
                            <div className="dropdown-content">
