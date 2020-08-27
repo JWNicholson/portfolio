@@ -2,7 +2,7 @@ import React from 'react';
 
 const ApodContentCard = (props) => {
 	return (
-		<div className="main-nasa-wrapper">
+		<div className="main-nasa-apod-wrapper">
             <div className="nasa-h1-ctnr">
             <h1>NASA's Astronomy Picture Of The Day</h1>
             </div>
@@ -12,7 +12,7 @@ const ApodContentCard = (props) => {
 				{props.url ? (
 					<img src={props.url} alt="NASA astronomy pic of the day" />
 				) : (
-					<p>
+					<p className="nasa-error-msg">
 						<strong>
 							<em>Couldn't find anything. Try again later.</em>
 						</strong>

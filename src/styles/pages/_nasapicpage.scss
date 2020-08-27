@@ -1,14 +1,25 @@
-.nasa-h1-ctnr {
-    margin-bottom:1.5rem;
-}
-
-.nasa-h1-ctnr h1 {
-    color:$apple-green;
-    text-shadow: $text-shadow-1;
-}
-
-h2.nasa-img-title {
-    color:$dark-background;
-    text-shadow: $text-shadow-2;
+.main-nasa-apod-wrapper {
+    .nasa-h1-ctnr {
+        margin-bottom:1.5rem;
+    }
     
+    .nasa-h1-ctnr h1 {
+        color:$apple-green;
+        text-shadow: $text-shadow-1;
+    }
+    
+    h2.nasa-img-title,
+    .nasa-error-msg {
+        color:$dark-background;
+        text-shadow: $text-shadow-2;
+    }
+
+    p.explanation-text{
+        color: $dark-background;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        text-align: left;
+    }
 }
+
+
