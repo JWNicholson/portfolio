@@ -1,10 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
+import ApodGrid from '../components/NasaApod/ApodGrid';
 
 export default class NasaPicPage extends Component {
     render() {
         return (
             <div>
-                <h1>NASA pic of day</h1>
+                <ApodGrid />
             </div>
         )
     }
