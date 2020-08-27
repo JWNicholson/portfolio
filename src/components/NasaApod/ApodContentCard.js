@@ -10,7 +10,9 @@ const ApodContentCard = (props) => {
 				<h2 className="nasa-img-title">{props.title}</h2>
 				{/* check if url prop exists. If no, render message instead */}
 				{props.url ? (
+                    <div className="apod-img-ctnr">
 					<img src={props.url} alt="NASA astronomy pic of the day" />
+                    </div>
 				) : (
 					<p className="nasa-error-msg">
 						<strong>
@@ -18,7 +20,7 @@ const ApodContentCard = (props) => {
 						</strong>
 					</p>
 				)}
-
+ 
 				<div className="nasa-image-copyright">
 					{/* check if copyright element exists if no, render nothing here */}
 					{props.copyright ? <p>&copy; {props.copyright}</p> : ''}

@@ -9,17 +9,28 @@
     }
     
     h2.nasa-img-title,
-    .nasa-error-msg {
+    .nasa-error-msg,
+    p.explanation-text {
         color:$dark-background;
         text-shadow: $text-shadow-2;
     }
 
     p.explanation-text{
-        color: $dark-background;
         font-size: 1.2rem;
         line-height: 1.8;
         text-align: left;
-    }
+    }   
 }
 
+   /* media queries */
+   @media screen and (max-width:1024px) {
 
+    .main-nasa-apod-wrapper{
+        width:90%;
+        margin: auto;
+    }
+     p.explanation-text {
+         margin-bottom: 2em;
+         padding: 2em auto;
+     }
+}
