@@ -4,8 +4,8 @@ import WeatherCard from '../components/WeatherApp/WeatherCard';
 
 import axios from 'axios';
 
-const API_KEY=process.env.REACT_APP_WTHR_KEY;
-const API_URL=process.env.REACT_APP_WTHR_URL;
+//const WTHR_API_KEY=process.env.REACT_APP_WTHR_KEY;
+const WTHR_API_URL=process.env.REACT_APP_WTHR_URL;
 
 
 export default function WeatherPage() {
@@ -13,11 +13,14 @@ export default function WeatherPage() {
     //because this API sends back an array
     const [weather, setWeather] = useState([]);
 
+
+
     useEffect(() => {
+        
         axios
-            .get(`${API_URL}q=Louisville,us&appid=${API_KEY}`)
+            .get(`${WTHR_API_URL}q=Louisville&appid=9a464594780d537398ba01d11636d00e`)
             .then((response) => {
-                //console.log(response.data.title);
+               console.log(response)
                 setWeather(response.data);
             })
             .catch((error) => {
@@ -26,6 +29,8 @@ export default function WeatherPage() {
     }, [])
 
     return (
-      <WeatherCard />
+      <WeatherCard
+        //use returned data here
+      />
     )
 }
