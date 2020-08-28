@@ -8,7 +8,7 @@ const sideDrawer = props => {
     };
 
     return(
-        <nav className={drawerClass} test-id="side-drawer">
+        <nav className={drawerClass} data-id="side-drawer">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/">Contact Me</a></li>

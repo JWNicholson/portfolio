@@ -49,7 +49,7 @@ functional based component(easier to test and debug)
 Elements-
 functional based
 
-Containers-
+Main App Containers-
 class based
 
 Steps - 
@@ -71,7 +71,8 @@ Logic flow-
 -[]renders components
 ````````` Re-test when adding content ```````````
 ---[Y]renders card header
----[Y]renders searchbox with value of ''
+---[Y]renders searchboxes with value of ''
+---[Y]renders 'Get Weather' button
 ---[]accepts user input from searchbox
 
 ---[Y]renders weather icon container

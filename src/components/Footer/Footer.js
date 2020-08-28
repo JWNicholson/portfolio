@@ -16,7 +16,7 @@ export default function Footer () {
    
     return (
         
-        <footer test-id="main-footer">
+        <footer data-id="main-footer">
             <section className="main-footer">
                 {/* <div className="main-footer-item">
                     <h2>John Nicholson</h2>

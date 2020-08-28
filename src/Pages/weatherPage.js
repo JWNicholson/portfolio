@@ -1,43 +1,31 @@
-import React, { Component } from 'react'
+import React, { useState,useEffect } from 'react';
 
-export default class WeatherPage extends Component {
-    render() {
-        return (
-            <div className="wthrApp-ctnr" 
-            data-id="wthrApp-ctnr">
-                <h1 data-id="wthrApp-h1">Weather App</h1>
-                <div className="wthrApp-card" data-id="wthrApp-card">
+import WeatherCard from '../components/WeatherApp/WeatherCard';
 
-                    {/* wthrApp-card header */}
-                    <div className="wthrApp-cardHeader"
-                        data-id="wthrApp-cardHeader">
+import axios from 'axios';
 
-                    </div>
-                    {/* weather searchbox */}
-                    <div className="wthrApp-searchBox-ctnr"
-                         data-id="wthrApp-searchBox-ctnr">
-                             <input className="wthrApp-searchBox-input"
-                                data-id="wthrApp-searchBox-input"
-                                type="text" 
-                            />
-                    </div>
+const API_KEY=process.env.REACT_APP_WTHR_KEY;
+const API_URL=process.env.REACT_APP_WTHR_URL;
 
-                    {/* weather icon */}
-                    <div className="wthrApp-car-icon-ctnr"
-                    data-id="wthrApp-car-icon-ctnr"
-                    >
 
-                    </div>
+export default function WeatherPage() {
+    //set initail weather state as an empty array,
+    //because this API sends back an array
+    const [weather, setWeather] = useState([]);
 
-                    {/* weather description */}
-                    <div 
-                    className="wthrApp-car-desc-ctnr"
-                    data-id="wthrApp-car-desc-ctnr"
-                    >
+    useEffect(() => {
+        axios
+            .get(`${API_URL}q=Louisville,us&appid=${API_KEY}`)
+            .then((response) => {
+                //console.log(response.data.title);
+                setWeather(response.data);
+            })
+            .catch((error) => {
+                console.log('weather .get error: ', error);
+            })
+    }, [])
 
-                    </div>
-                </div>
-            </div>
-        )
-    }
+    return (
+      <WeatherCard />
+    )
 }
