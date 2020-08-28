@@ -19,9 +19,19 @@ https://www.amcharts.com/free-animated-svg-weather-icons/
 
 
 File Stucture in portfolio project-
+
 src -> Pages -> weatherPage
 src -> components -> weatherApp -> [components, elements,containers,scss, wthrAssets -> icons, etc.] 
 
+App
+|-Search bar
+    |-Input
+    |- Control Button(s)
+|- WeatherCard
+    |-Date
+    |-Icon
+    |-Temp
+    |-Weather desctiption
 
 SASS styling files -
 src -> pages -> _weatherApp.scss
