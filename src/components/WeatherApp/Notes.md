@@ -54,3 +54,45 @@ class based
 
 Steps - 
 build modulize static display
+
+############  TDD  ###################
+--1.Write test before writing code, to make sure test fails as a control.
+--2.Write the code you wish you had ( like a component wrapper for instance) and add it to project
+--3. Repeat until code is written and passing all tests
+
+UX flow -
+[Y]User visits page
+[]User inputs desired location
+
+Logic flow-
+[Y]page renders weather app container
+
+[Y]page renders weather card
+-[]renders components
+````````` Re-test when adding content ```````````
+---[]renders card header
+---[]renders searchbox
+---[]accepts user input from searchbox
+
+---[]page renders weather icon (static)
+-----[]re-test when API is functioning
+
+---[]page renders weather description
+-----[]re-test when API is functioning
+
+Logic tests
+---[]app makes get request from API server(No error codes)
+---[]app recieves data from API server (200 code, JSON)
+
+
+
+
+
+****** My test process
+--use data-id tags to identify testable components (per Cypress best practices)
+
+1. visits weather page
+2. weather app container should exist
+3. h1 contains "Weather App"
+4. weather card exists
+

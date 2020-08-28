@@ -23,18 +23,12 @@ function App() {
     <main className="main-cntr">
     <Header />
 
-    <Route exact path="/" component={HomePage} />
-    <Route path="/gameoflife" component={GameOfLifePage} />
-    <Route path="/nasapic" component={NasaPicPage} />
-    <Route path="/weather" component={WeatherPage} />
+      <Route exact path="/" component={HomePage} />
+      <Route path="/gameoflife" component={GameOfLifePage} />
+      <Route path="/nasapic" component={NasaPicPage} />
+      <Route path="/weather" component={WeatherPage} />
   
-    
-     
-      
-       {/* <StartStop /> */}
-    
-      
-       </main>
+    </main>
      
     </div>
     <Footer />
