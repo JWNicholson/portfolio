@@ -34,8 +34,6 @@ export default function Footer () {
                    <a href="mailto:john.nicholson812@gmail.com?"> <h2 className="main-footer-title">
                         Contact Me &#160;&#160; <FaEnvelope />
                     </h2></a>
-                    
-                    
                 </div>
 
                 <div className="main-footer-item">
