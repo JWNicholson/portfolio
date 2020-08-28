@@ -8,12 +8,12 @@ const sideDrawer = props => {
     };
 
     return(
-        <nav className={drawerClass}>
+        <nav className={drawerClass} test-id="side-drawer">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/">Contact Me</a></li>
                 <li>
-                    <div className="side-drawer-dropdown">
+                    <div className="side-drawer-dropdown" test-id="side-drawer-dropdown">
                     <button className="side-drawer-dropdown-btn">Projects</button>
                     <div className="side-drawer-dropdown-content">
                         <a href="/nasapic">NASA Pic Of The Day</a>

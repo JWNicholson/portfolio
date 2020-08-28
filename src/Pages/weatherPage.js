@@ -17,14 +17,25 @@ export default class WeatherPage extends Component {
                     <div className="wthrApp-searchBox-ctnr"
                          data-id="wthrApp-searchBox-ctnr">
                              <input className="wthrApp-searchBox-input"
-                                test-id="wthrApp-searchBox-input"
+                                data-id="wthrApp-searchBox-input"
                                 type="text" 
                             />
                     </div>
 
                     {/* weather icon */}
+                    <div className="wthrApp-car-icon-ctnr"
+                    data-id="wthrApp-car-icon-ctnr"
+                    >
+
+                    </div>
 
                     {/* weather description */}
+                    <div 
+                    className="wthrApp-car-desc-ctnr"
+                    data-id="wthrApp-car-desc-ctnr"
+                    >
+
+                    </div>
                 </div>
             </div>
         )

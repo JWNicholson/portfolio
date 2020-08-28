@@ -70,13 +70,15 @@ Logic flow-
 [Y]page renders weather card
 -[]renders components
 ````````` Re-test when adding content ```````````
----[]renders card header
----[]renders searchbox
+---[Y]renders card header
+---[Y]renders searchbox with value of ''
 ---[]accepts user input from searchbox
 
----[]page renders weather icon (static)
+---[Y]renders weather icon container
+----[]page renders weather icon (static)
 -----[]re-test when API is functioning
 
+--[Y]page renders weather description container
 ---[]page renders weather description
 -----[]re-test when API is functioning
 
@@ -91,10 +93,15 @@ Logic tests
 ****** My test process
 --use data-id tags to identify testable components (per Cypress best practices)
 
+A. Header, Footer, Toolbar exists
+B. side-drawer exists, not visible
+
 1. visits weather page
 2. weather app container should exist
 3. h1 contains "Weather App"
 4. weather card exists
 5. card header exists
-6. search box exists
+6. search box exists, should have value ''
+7. weather icon container exists
+8. weather description container exists
 

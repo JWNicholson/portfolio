@@ -21,6 +21,13 @@ describe('Rendering weather widget', () => {
 
         cy.get('[data-id="wthrApp-searchBox-input"]')
             .should('exist')
+            .should('have.value','')
+
+        cy.get('[data-id="wthrApp-car-icon-ctnr"]')
+            .should('exist')
+
+        cy.get('[data-id="wthrApp-car-desc-ctnr"]')
+            .should('exist')
 
     });
     

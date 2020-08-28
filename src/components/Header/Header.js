@@ -33,7 +33,7 @@ export default class Header extends Component {
 
         return(
             <>
-            <header className="App-header">
+            <header className="App-header" test-id="App-header">
             <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
             <SideDrawer show={this.state.sideDrawerOpen} />
             {backdrop}

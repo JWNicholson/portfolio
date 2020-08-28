@@ -2,7 +2,7 @@ import React from 'react';
 
 import DrawerToggleBtn from '../SideDrawer/DrawerToggleBtn';
 const toolbar = props => (
-    <header className="toolbar">
+    <header className="toolbar" test-id="toolbar">
         <nav className="toolbar-nav">
             <div>
                 <DrawerToggleBtn click={props.drawerClickHandler} />
