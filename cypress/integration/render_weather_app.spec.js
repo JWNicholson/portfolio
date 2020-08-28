@@ -16,6 +16,12 @@ describe('Rendering weather widget', () => {
         cy.get('[data-id="wthrApp-cardHeader"]')
             .should('exist')
 
+        cy.get('[data-id="wthrApp-searchBox-ctnr"]')
+            .should('exist')
+
+        cy.get('[data-id="wthrApp-searchBox-input"]')
+            .should('exist')
+
     });
     
 

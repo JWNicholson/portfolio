@@ -11,9 +11,16 @@ export default class WeatherPage extends Component {
                     {/* wthrApp-card header */}
                     <div className="wthrApp-cardHeader"
                         data-id="wthrApp-cardHeader">
-                            
-                        </div>
+
+                    </div>
                     {/* weather searchbox */}
+                    <div className="wthrApp-searchBox-ctnr"
+                         data-id="wthrApp-searchBox-ctnr">
+                             <input className="wthrApp-searchBox-input"
+                                test-id="wthrApp-searchBox-input"
+                                type="text" 
+                            />
+                    </div>
 
                     {/* weather icon */}
 

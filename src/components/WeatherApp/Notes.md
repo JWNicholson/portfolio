@@ -95,4 +95,6 @@ Logic tests
 2. weather app container should exist
 3. h1 contains "Weather App"
 4. weather card exists
+5. card header exists
+6. search box exists
 
