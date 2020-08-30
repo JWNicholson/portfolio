@@ -1,26 +1,40 @@
-import React from 'react';
+import React from 'react'
 
-import WeatherSearchBar from './weatherSearchbar';
 
-const Weather = (props) => {
-	return (
-		<div className="wthrApp-ctnr" data-id="wthrApp-ctnr">
-			<h1 data-id="wthrApp-h1">Weather App</h1>
 
-			<div className="wthrApp-card" data-id="wthrApp-card">
-				{/* wthrApp-card header */}
-				<div className="wthrApp-cardHeader" data-id="wthrApp-cardHeader" />
-				{/* weather searchbox */}
-				<WeatherSearchBar />
 
-				{/* weather icon */}
-				<div className="wthrApp-car-icon-ctnr" data-id="wthrApp-car-icon-ctnr" />
+const WeatherCard = (props) => {
+    return (
+        <div className="weather-card-wrapper">
+            <div className="weather-card-header">
+                <h3>Weather Card Header   foo</h3>
+            </div>
 
-				{/* weather description */}
-				<div className="wthrApp-car-desc-ctnr" data-id="wthrApp-car-desc-ctnr" />
-			</div>
-		</div>
-	);
-};
+            <div className="weather-searchBar">
+                searchBar
+            </div>
 
-export default Weather;
+            
+            <div className="weather-conditions-table">
+    <h4>Current Conditions For :the_City_you_searched</h4>
+
+                <div className="weather-table-data-wrapper">
+                <div className="weather-icon-ctnr">
+                    weather icon
+                </div>
+
+                <div className="weather-conditions-ctnr">
+                    weather conditions
+                </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    )
+}
+
+
+export default WeatherCard
+
