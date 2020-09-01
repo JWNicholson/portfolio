@@ -22,21 +22,22 @@ export default function Grid () {
 		axios
 			.get(`${API_URL}date=${currDay}&api_key=${API_KEY}`)
 			.then((response) => {
-                //console.log(response.data.title);
+               // console.log(response.data.media_type);
 				setNasaData(response.data);
 			})
 			.catch((error) => {
 				console.log('.get Error: ', error);
 			});
 	}, []); // [] keeps code from making an infinite loop
-
+  // console.log(nasaData.media_type)
 	return (
 		<div>
 			<ApodContentCard
 				//use returned data here--
 				key={nasaData.id}
+				media={nasaData.media_type}
 				// nasaData.url
-				url={nasaData.hdurl}
+				url={nasaData.url}
 				//nasaData.title
 				title={nasaData.title}
 				//nasaData.date

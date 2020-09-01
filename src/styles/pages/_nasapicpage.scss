@@ -15,6 +15,18 @@
         text-shadow: $text-shadow-2;
     }
 
+    .apod-vid-ctnr {
+        display:flex;
+        justify-content: center;
+        margin-top: 2em;
+
+        .vid-player{
+            border: 2px solid $dark-background;
+            border-radius: $br-4;
+            box-shadow: $box-shadow-2;
+        }
+    }
+
     p.explanation-text{
         font-size: 1.2rem;
         line-height: 1.8;

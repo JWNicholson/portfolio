@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from 'react-player'
 
 const ApodContentCard = (props) => {
 	return (
@@ -9,17 +10,28 @@ const ApodContentCard = (props) => {
 			<div className="nasa-img-ctnr content-card">
 				<h2 className="nasa-img-title">{props.title}</h2>
 				{/* check if url prop exists. If no, render message instead */}
-				{props.url ? (
+
+
+				
+				{props.medi==="image" ? (
                     <div className="apod-img-ctnr">
 					<img src={props.url} alt="NASA astronomy pic of the day" />
                     </div>
-				) : (
+				) : 
+			 	props.media==="video"?(
+			 		<div className="apod-vid-ctnr">
+						<ReactPlayer className="vid-player"  url={props.url}/>
+					</div>
+				):
+				(
 					<p className="nasa-error-msg">
 						<strong>
 							<em>Couldn't find anything. Try again later.</em>
 						</strong>
 					</p>
 				)}
+
+				
  
 				<div className="nasa-image-copyright">
 					{/* check if copyright element exists if no, render nothing here */}
